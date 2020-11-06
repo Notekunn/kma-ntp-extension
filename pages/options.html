@@ -6,11 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/options.css">
+    <link rel="stylesheet" href="../css/sweetalert.css">
 </head>
 
 <body>
 
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="" width="72" height="72">
+            <h2>Cấu hình</h2>
+            <p class="lead"></p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                <div class="card p-0">
+                    <div class="card-header bg-primary">
+                        <h4 class="text-white">Tùy chỉnh</h4>
+                    </div>
+                    <div class="card-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="studentCode">Mã sinh viên</label>
+                                    <input type="text" class="form-control" id="studentCode" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập mã sinh viên
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-3">
+                                    <label for="password">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập mật khẩu
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <label for="btnCheckPassword">Check</label>
+                                    <button class="btn btn-primary btn-block" id="btnCheckPassword">Kiểm tra</button>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="semesters">Học kỳ</label>
+                                    <select class="custom-select d-block w-100" id="semesters" required>
+                                        <option value="">Chọn học kỳ</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Chọn học kỳ phù hợp
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="type-schedule">Kiểu thời khóa biểu</label>
+                                    <select class="custom-select d-block w-100" id="type-schedule" required>
+                                        <option value="">Chọn kiểu</option>
+                                        <option value="1">Ngày</option>
+                                        <option value="2">Tuần</option>
+                                        <option value="3">Tháng</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Chọn kiểu xem thời khóa biểu
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-3 mb-3">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- <hr class="mb-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="same-address">
+                                <label class="custom-control-label" for="same-address">Shipping address is the same as
+                                    my
+                                    billing address</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Save this information for next
+                                    time</label>
+                            </div> -->
+
+                            <button class="btn btn-primary btn-lg btn-block" id="btnSave" type="submit">Lưu cài
+                                đặt</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2019-2020 Notekunn</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="../assets/pages/options.js"></script>
 </body>
+
 
 </html>
