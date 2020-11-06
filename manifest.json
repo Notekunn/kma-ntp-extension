@@ -1,0 +1,30 @@
+{
+    "name": "KMA-NTP",
+    "version": "1.0.1",
+    "description": "Tùy chỉnh trang mới cho sinh viên kma",
+    "icons": {
+        "16": "icons/16.png",
+        "32": "icons/32.png",
+        "128": "icons/128.png"
+    },
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "cookies",
+        "http://*/*",
+        "https://*/*",
+        "notifications",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "assets/background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "pages/popup.html"
+    },
+    "options_page": "pages/options.html",
+    "manifest_version": 2
+}
