@@ -1,0 +1,12 @@
+p.subject-item {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+#hello {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold
+}
