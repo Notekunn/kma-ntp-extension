@@ -1,7 +1,7 @@
 {
-    "name": "KMA-NTP",
+    "name": "KMA Schedules On New Tab",
     "version": "1.0.1",
-    "description": "Tùy chỉnh trang mới cho sinh viên kma",
+    "description": "Thay đổi tab mới mặc định bằng thời khóa biểu trong tuần (Dành cho sinh viên KMA)",
     "icons": {
         "16": "icons/16.png",
         "32": "icons/32.png",
